@@ -1,11 +1,23 @@
 import React from 'react'
-import { TbAmbulance } from "react-icons/tb";
+import { Footer, Possibility, Blog, Features, WhatGPT3, Header } from './containers/index';
+import { CTA, Brand, Navbar} from './components/index';
+import './App.css';
 
 const App = () => {
   return (
-    <h1>
-        <TbAmbulance />
-    </h1>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
+    </div>
   )
 }
 
